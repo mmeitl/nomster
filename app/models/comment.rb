@@ -10,10 +10,15 @@ class Comment < ActiveRecord::Base
     'five stars'  => '5_stars'
   }
   
+    validates :message,  length: { minimum: 3 }
+    validates :rating, :presence => true
+      
+  
   def humanized_rating
     RATINGS.invert[self.rating]
   end
   def send_comment_email
       NotificationMailer.comment_added(self).deliver
-  end  
+  end
+
 end
