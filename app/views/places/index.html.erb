@@ -4,9 +4,15 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
     
-    <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-    <% end %>
+
+
+<% if place.photos.present? && place.photos.last.picture.present? %>
+<div class="col-xs-2">
+     <p><%= image_tag place.photos.last.picture, :class => 'img-responsive img-thumbnail' %></p><br />
+</div>
+<% end %>
+
+
 <% if place.comments.present? %>    
     <div class="col-xs-12">
       <blockquote>
