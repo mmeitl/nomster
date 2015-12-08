@@ -26,10 +26,11 @@ body {
   background:url('/assets/retina_dust.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom:0;
 }
 
 .navbar-inverse .navbar-brand {
- color: #1eaad9;
+ color: #1eaad9 !important;
  font-family: 'nobileregular';
  font-size:26px;
 }
@@ -66,4 +67,24 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 550px !important;
+     width: 100% !important;
+}
+
+.carousel-caption {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight:100;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    position:absolute !important;
+    left:0 !important;    
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
