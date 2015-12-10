@@ -71,7 +71,7 @@ blockquote p {
   display: inline;
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+.carousel-inner > .item > .img-responsive, .carousel-inner > .item > a > .img-responsive {
     height: 550px !important;
      width: 100% !important;
 }
@@ -89,4 +89,9 @@ blockquote p {
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.img-responsive {
+  background-size: cover;
+  background-position: center;
 }
