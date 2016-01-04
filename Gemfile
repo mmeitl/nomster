@@ -32,6 +32,7 @@ gem "figaro", ">=1.0.0"
 
 gem "carrierwave"
 gem "fog"
+gem "factory_girl_rails", "~> 4.0"
 
 
 # Use ActiveModel has_secure_password

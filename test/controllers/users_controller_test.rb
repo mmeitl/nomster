@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+ test "user dashboard show" do
+    u = FactoryGirl.create(:user)
+    sign_in u
+
+    get :show, :id => u.id
+    assert_response :success
+  end
 end
